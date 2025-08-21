@@ -33,10 +33,11 @@ def index():
                 else:
                     name = "Unknown"
             else:
-                name = "No face detected"
+                name = "No face detected !!"
 
     return render_template("index.html", name=name)
 
 if __name__ == "__main__":
     os.makedirs("uploads", exist_ok=True)
     app.run(debug=True)
+
